@@ -1,10 +1,10 @@
 import express from 'express';
-import prisma from './libs/prisma';
+import prisma from './libs/prisma.js';
 
 // import de rotas da api
 
-import artistRoutes from './routes/artistRoutes';
-import artworkRoutes from './routes/artworkRoutes';
+import artistRoutes from './routes/artistRoutes.js';
+import artworkRoutes from './routes/artworkRoutes.js';
 
 const app = express();
 
