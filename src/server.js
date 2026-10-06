@@ -10,7 +10,7 @@ const app = express();
 
 // porta do servidor
 
-const port = env(PORT)
+const port = process.env.PORT || 3000
 
 app.use(express.json());
 
@@ -32,3 +32,8 @@ app.get('/api/health', async (req, res) => {
         })
     }
 })
+
+app.listen(port, () => {
+  console.log(`Servidor executando na porta ${port}`);
+});
+
